@@ -40,6 +40,44 @@ With many ways to do this, utilizing the Server Mananger seems to be one of easi
 <img width="1231" height="938" alt="image" src="https://github.com/user-attachments/assets/da41a747-d3bb-4f71-957a-0d00aa323339" />
 Once it has been renamed, Windows will restart. 
 # Configure Static IP Address 
+To set up a static IP, we will be choosing a private IP range. To edit this, we will be using the shortcut to get to the Network Connections (component) in Windows. 
+This is done by typing "Run" (for the Run Dialog tab) in the search bar > then typing _ncpa.cpl_ and clicking ok.
+
+<img width="1191" height="976" alt="image" src="https://github.com/user-attachments/assets/a71dafea-fe8e-41fe-a05f-e77b55bb47b0" />
+
+From here, I will be using the properties section within the Ethernet tab to modify the DNS Server and give the server a static IP. I find the easiest way to do this is to make note of the default settings in your virtual machine and adjust them accordingly. 
+We should be able to access the internet. You can double check this by opening a browser OR (to look like an IT Vet) ping a website :) 
+
+<img width="1182" height="930" alt="image" src="https://github.com/user-attachments/assets/365e6cf0-8967-45ae-a236-e9fefe705aec" />
+
+# Installing Active Directory Domain Services 
+If you can follow prompts, you can do this portion. It's really simple if you know the roles and features you want. This can be found in Server Manager > Manage tab > Add Roles and features 
+For the sake of time, as long as you choose "Active Directory Domain Services" and follow the prompts, you should be good to go. 
+
+<img width="1186" height="936" alt="image" src="https://github.com/user-attachments/assets/47f3112d-77a4-4127-9e68-1c97dea6deae" />
+
+<img width="490" height="353" alt="Screenshot 2025-12-09 224650" src="https://github.com/user-attachments/assets/d73c8904-f878-435a-9b62-5b8aff0a26f7" />
+
+<img width="1184" height="935" alt="image" src="https://github.com/user-attachments/assets/1b393460-359e-4577-b595-94d8fdfc95a9" />
+
+<img width="1178" height="928" alt="image" src="https://github.com/user-attachments/assets/3ef142d2-6acc-401b-ad0e-60b92760f2c1" />
+
+From here, we will want to "Add a new Forest". This is done by providing a Domain Name (of your choosing) and a DSRM restore password. This password is used to correct problems or enter restore mode with Active Directory.
+
+<img width="952" height="702" alt="image" src="https://github.com/user-attachments/assets/a596939d-2055-4d3e-9ea0-1e8784648d5b" />
+
+
+# Create Objects in Active Directory 
+
+
+
+
+
+
+
+
+
+
 
 
 
